@@ -1,0 +1,11 @@
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet prefetch", href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/2.3.7/mini-default.min.css")
+  body
+    form(action="/upload" enctype="multipart/form-data" method="post")
+      input(type="file", id="fileinput", name="filename")
+      label(for="fileinput", class="button")
+        | 選取檔案
+      p.buttons
+        input(type="submit", value="送出")
